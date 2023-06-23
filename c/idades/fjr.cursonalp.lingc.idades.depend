@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1686362679 source:c:\users\fj\desktop\cursos\logicanelioalves\exercicios\c\fjr.cursonalp.lingc.idades\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

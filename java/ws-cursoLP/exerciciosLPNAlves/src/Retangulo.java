@@ -1,0 +1,34 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+/**	Problema "retangulo" 
+Fazer um programa para ler as medidas da base e altura de um retângulo. Em seguida, mostrar o valor 
+da área, perímetro e diagonal deste retângulo, com quatro casas decimais, conforme exemplos.  **/
+
+
+public class Retangulo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Base do retangulo: ");
+		double base = sc.nextDouble();
+		System.out.print("Altura do retangulo: ");
+		double heigth = sc.nextDouble();
+		
+		sc.close();
+		
+		System.out.println("AREA = " + String.format("%.4f", base * heigth));
+		
+		double perimeter =  base * 2 + heigth * 2;
+		System.out.println("PERIMETRO = " + String.format("%.4f", perimeter));
+		
+		double diagonal = Math.sqrt( Math.pow(base, 2) + Math.pow(heigth, 2));
+		System.out.println("DIAGONAL = " + String.format("%.4f", diagonal));
+		
+	}
+
+}

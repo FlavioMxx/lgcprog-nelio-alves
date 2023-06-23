@@ -1,0 +1,43 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+// Problema "soma_vetor"
+// Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida:
+// - Imprimir todos os elementos do vetor
+// - Mostrar na tela a soma e a média dos elementos do vetor
+
+
+public class Soma_vetor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Quantos numeros voce vai digitar? ");
+		int valN = sc.nextInt();
+		
+		double tot = 0;
+		int count = 0;
+		double[] vet = new double[valN];
+		
+		for(int i = 0; i < valN; i++) {
+			System.out.print("Digite um numero: ");
+			vet[i] = sc.nextDouble();
+			count = count + 1;
+			tot = tot + vet[i];
+		}
+		
+		System.out.print("VALORES = ");
+		
+		for (int i = 0; i < valN; i++) {
+			System.out.print(String.format("%.1f", vet[i]) + " ");
+		}
+		
+		System.out.println("\nSOMA = " + String.format("%.2f", tot));
+		System.out.println("MEDIA = " + String.format("%.2f", tot / count));
+		
+		sc.close();
+	}
+
+}

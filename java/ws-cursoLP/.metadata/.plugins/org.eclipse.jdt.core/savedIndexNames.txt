@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\cursos\logicaNelioAlves\exercicios\java\ws-cursoLP\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+297604861.index
+4070579458.index

@@ -1,0 +1,40 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+/**	Problema "baskara" 
+Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula 
+de Baskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais, 
+conforme exemplo. Se a equação não possuir raízes reais, mostrar uma mensagem. **/
+
+public class Bhaskara {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Coeficiente a: ");
+		double numA = sc.nextDouble();
+		System.out.println("Coeficiente b: ");
+		double numB = sc.nextDouble();
+		System.out.println("Coeficiente c: ");
+		double numC = sc.nextDouble();
+		
+		sc.close();
+		
+		double delta = Math.pow(numB, 2) - 4 * numA * numC;
+		
+		if (delta < 0) {
+			System.out.println("Esta equacao nao possui raizes reais.");
+		} else {
+			double valA = ((numB * -1) + Math.sqrt(delta)) / (2 * numA);
+			double valB = ((numB * -1) - Math.sqrt(delta)) / (2 * numA);
+			
+			System.out.println("X1 = " + String.format("%.4f", valA));
+			System.out.println("X2 = " + String.format("%.4f", valB));
+		}
+		
+	}
+
+}

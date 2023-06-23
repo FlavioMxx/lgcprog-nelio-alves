@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1686365243 source:c:\users\fj\desktop\cursos\logicanelioalves\exercicios\c\fjr.cursonalp.lingc.bhaskara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
